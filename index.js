@@ -119,7 +119,7 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+    /
 }
 
 
