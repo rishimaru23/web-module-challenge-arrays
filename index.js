@@ -45,8 +45,9 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
-    /*your code here*/
+function copy(arr){ //invoking *function copy with parameter arr
+    let newArr = [...arr]; //creates a new array called newArr and making it a copy of the existing array / the three dots states the copying of the properties of the existing array /
+    return newArr; //returning the new array
 }    
 
 
@@ -64,8 +65,8 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-   /*your code here*/
+function is31Flavors(arr){ // inovking function and giving it the parameter of arr
+return Boolean(arr.length === 31) // returning a Boolean which says if the array is true or false.
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -81,8 +82,10 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-   /*your code here*/
+function addFlavor(arr, flavor){ //invoking function addFlavor and giving it its parameters
+   let newFlavor = flavor.toString(); // new variable new Flavor= whatever we pass to the flavor parameter will be converted into a string 
+   arr.unshift(newFlavor); // adding the newFlavor to the beginning of the array with the unshift method
+   return arr; // returning the arr whichs updates arra
 }
 
 
@@ -97,8 +100,9 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
+function removeLastFlavor(arr){
+   arr.pop();
+   return arr;
 }
 
 
